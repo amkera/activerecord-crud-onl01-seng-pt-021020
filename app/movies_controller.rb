@@ -1,3 +1,4 @@
+require 'pry'
 def can_be_instantiated_and_then_saved
   movie = Movie.new
   movie.title = "This is a title."
@@ -24,6 +25,7 @@ end
 
 def can_get_the_first_item_in_the_database
   Movie.first.title
+  binding.pry
 end
 
 def can_get_the_last_item_in_the_database
